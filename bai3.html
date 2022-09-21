@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let users = prompt("nhập số đi tính giai thừa nè");
+
+    function func(users) {
+        let func = 1
+        for (let i = 1; i < users; i++) {
+            func += func * i;
+        }
+        return func
+    }
+
+    let result = func(users)
+    alert(result);
+
+</script>
+</body>
+</html>

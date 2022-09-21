@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let users = prompt("nhập số nguyên tố 1")
+    let users1 =prompt("nhập số nguyên tố 2")
+    let uders2 =prompt("nhập số nguyên tố 3")
+    let arr = [users,users1,uders2];
+    let min=users;
+    function check (min){
+        for (let i = 1;i < arr.length;i++){
+            if (min > arr[i]){
+                min = arr[i];
+            }
+        }return min;
+
+    }
+    check(min);
+    alert(check(min))
+</script>
+</body>
+</html>

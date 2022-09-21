@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr =[];
+  let num = Number(prompt("nhập số lượng phần tử"));
+  for (let i=0;i<num;i++){
+    let name1 = prompt("nhập phần tử của mảng");
+    arr.push(name1);
+  }
+  let name2 = prompt("nhập phần cần kiểm tra");
+  let count =0;
+  function checkValue(){
+    for (let i = 0;i<=arr.length;i++){
+      if (name2 === arr[i]){
+        count += 1;
+      }
+    }
+    if (count===0){
+      return "-1";
+    }else {
+      return count;
+    }
+  }
+  alert(checkValue())
+</script>
+</body>
+</html>
